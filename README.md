@@ -1,86 +1,86 @@
 # Music Player
 
-A simple Python music player that asks for the artist and song title, then plays the first 30 seconds of the corresponding MP3 file.
+Ένα απλό music player σε Python που ζητά τον καλλιτέχνη και το τραγούδι και παίζει τα πρώτα 30 δευτερόλεπτα του αντίστοιχου MP3 αρχείου.
 
-## Requirements
+## Απαιτήσεις
 
-- Python 3.14 or newer
+- Python 3.14 ή νεότερη
 - pygame-ce
-- An MP3 file
+- Ένα αρχείο MP3
 
-## Installation
+## Εγκατάσταση
 
-Install `pygame-ce`:
+Εγκατάσταση του `pygame-ce`:
 
 ```powershell
 py -m pip install pygame-ce
 ```
 
-## File Structure
+## Δομή αρχείων
 
 ```text
 music player/
 ├── main.py
 ├── README.md
 └── music/
-    └── Artist-Song.mp3
+    └── Καλλιτέχνης-Τραγούδι.mp3
 ```
 
-## File Naming
+## Ονομασία αρχείων
 
-The MP3 file must follow this format:
+Το MP3 πρέπει να έχει την παρακάτω μορφή:
 
 ```text
-Artist-Song.mp3
+Καλλιτέχνης-Τραγούδι.mp3
 ```
 
-Example:
+Παράδειγμα:
 
 ```text
 test-test.mp3
 ```
 
-## Usage
+## Εκτέλεση
 
-Open `main.py` with IDLE and press `F5`.
+Άνοιξε το `main.py` με το IDLE και πάτησε `F5`.
 
-The program will ask for:
-
-```text
-Artist:
-Song:
-```
-
-Example:
+Το πρόγραμμα θα ζητήσει:
 
 ```text
-Artist: test
-Song: test
+Καλλιτέχνης:
+Τραγούδι:
 ```
 
-The program will search for:
+Παράδειγμα:
+
+```text
+Καλλιτέχνης: test
+Τραγούδι: test
+```
+
+Το πρόγραμμα θα αναζητήσει το αρχείο:
 
 ```text
 music/test-test.mp3
 ```
 
-If the file is found, the first 30 seconds will be played.
+Αν το αρχείο βρεθεί, θα παίξει τα πρώτα 30 δευτερόλεπτά του.
 
-## Features
+## Λειτουργίες
 
-- Asks for the artist's name.
-- Asks for the song title.
-- Checks whether the corresponding MP3 file exists.
-- Plays the first 30 seconds of the file.
-- Displays a message if the file cannot be found.
+- Ζητά το όνομα του καλλιτέχνη.
+- Ζητά τον τίτλο του τραγουδιού.
+- Ελέγχει αν υπάρχει το αντίστοιχο MP3.
+- Παίζει το αρχείο για 30 δευτερόλεπτα.
+- Εμφανίζει μήνυμα αν το αρχείο δεν βρεθεί.
 
-## Limitations
+## Περιορισμοί
 
-- Only local MP3 files are supported.
-- The program does not search for songs on the Internet.
-- MP4 video playback is not supported.
-- File names must match the entered artist and song exactly.
+- Υποστηρίζονται μόνο τοπικά αρχεία MP3.
+- Το πρόγραμμα δεν αναζητά τραγούδια στο Internet.
+- Το πρόγραμμα δεν υποστηρίζει αναπαραγωγή MP4 video.
+- Τα ονόματα των αρχείων πρέπει να είναι γραμμένα ακριβώς σωστά.
 
-## License
+## Άδεια χρήσης
 
-This project is licensed under the ΜΙΤ License.
+Το project διατίθεται με την άδεια ΜΙΤ
